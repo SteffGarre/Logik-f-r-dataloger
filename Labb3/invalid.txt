@@ -1,0 +1,16 @@
+[[idle, [power]],
+ [power, [temp, idle]],
+ [temp, [storage, idle]],
+ [storage, [transmit, idle]],
+ [transmit, [idle]]].
+
+[[idle, []],
+ [power, [on]],
+ [temp, [cold, on]],
+ [storage, [data, cold, on]],
+ [transmit, [send, data, cold, on]].
+
+idle.
+
+ag(and(on,neg(cold))).
+
